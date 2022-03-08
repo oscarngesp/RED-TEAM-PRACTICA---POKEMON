@@ -52,6 +52,8 @@ SSLVERIFY = True
 
 ####
 # Constants
+
+#En esta parte del codigo se establecen las constantes, valores que permanecen intactos a traves de la ejecucion de un programa, nadie puede modificar despues de la primera asignación. 
 ####
 METHOD_GET = 'get'
 METHOD_POST = 'post'
@@ -63,6 +65,8 @@ DEFAULT_WORKERS = 10
 DEFAULT_SOCKETS = 500
 
 GOLDENEYE_BANNER = 'GoldenEye v2.1 by Jan Seidl <jseidl@wroot.org>'
+
+#En esta constante identifica el sistema operativo y el navegador de la peticion del agente de usuario. 
 
 USER_AGENT_PARTS = {
     'os': {
@@ -102,6 +106,7 @@ USER_AGENT_PARTS = {
 
 ####
 # GoldenEye Class
+#En este punto se establecen las clases, como podemos ver, counter, las counter, worker queue y demás, son las propiedades, se representan a modo de variables. 
 ####
 
 class GoldenEye(object):
@@ -122,6 +127,8 @@ class GoldenEye(object):
     nr_workers = DEFAULT_WORKERS
     nr_sockets = DEFAULT_SOCKETS
     method = METHOD_GET
+
+#Todo esto que aparece a continuación son metodos, son funciones que representan acciones propias que puede relizar el objeto y no otro. Como se ve el parametro de un metodo siempre debe ser self. 
 
     def __init__(self, url):
 
